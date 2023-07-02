@@ -12,6 +12,15 @@ import com.example.newsapp.model.Article
 
 class NewsAdapter: RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
 
+//    lateinit var ivArticleImage: ImageView
+//    lateinit var tvSource: TextView
+//    lateinit var tvTitle: TextView
+//    lateinit var tvDescription: TextView
+//    lateinit var tvPublishedAt: TextView
+
+
+
+
     inner class ArticleViewHolder(itemView: View): RecyclerView.ViewHolder(itemView)
 
     private val differCallback = object : DiffUtil.ItemCallback<Article>() {
@@ -29,7 +38,7 @@ class NewsAdapter: RecyclerView.Adapter<NewsAdapter.ArticleViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleViewHolder {
         return ArticleViewHolder(
             LayoutInflater.from(parent.context).inflate(
-                R.layout.fragment_article_news,
+                R.layout.item_article_preview,
                 parent,
                 false
             )

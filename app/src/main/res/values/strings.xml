@@ -6,4 +6,9 @@
     <string name="article">Article</string>
     <string name="profile">Profile</string>
     <string name="image">Image</string>
+    <string name="source">Source</string>
+    <string name="image_article">Image Article</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="published_at">PUBLISHED AT</string>
 </resources>
