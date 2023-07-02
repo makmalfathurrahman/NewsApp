@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_breaking_news">
+
+    <fragment
+        android:id="@+id/navigation_breaking_news"
+        android:name="com.example.newsapp.ui.breaking_news.BreakingNewsFragment"
+        android:label="@string/breaking_news"
+        tools:layout="@layout/fragment_breaking_news" >
+        <action
+            android:id="@+id/action_navigation_breaking_news_to_articleNewsFragment"
+            app:destination="@id/articleNewsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search_news"
+        android:name="com.example.newsapp.ui.search_news.SearchNewsFragment"
+        android:label="@string/search_news"
+        tools:layout="@layout/fragment_search_news" >
+        <action
+            android:id="@+id/action_navigation_search_news_to_articleNewsFragment"
+            app:destination="@id/articleNewsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_bookmark_news"
+        android:name="com.example.newsapp.ui.bookmark_news.BookmarkNewsFragment"
+        android:label="@string/bookmark_news"
+        tools:layout="@layout/fragment_bookmark_news"
+        >
+        <action
+            android:id="@+id/action_navigation_bookmark_news_to_articleNewsFragment"
+            app:destination="@id/articleNewsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/articleNewsFragment"
+        android:name="com.example.newsapp.ui.article_news.ArticleNewsFragment"
+        android:label="fragment_article_news"
+        tools:layout="@layout/fragment_article_news" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.newsapp.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>
